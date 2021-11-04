@@ -1,0 +1,36 @@
+ALGORITHM checkpoint
+VAR 
+vow,w,i,nbr: INTEGER:=0
+phrase: ARRAY_OF CHAR[length];
+sentence:STRING 
+BEGIN
+
+write("hello galaxy.")
+read (sentence) 
+/* we'll put the string sentence in phrase,an array*/ 
+phrase:=["h","e","l","l","o"," ","g","a","l","a","x","y","."] 
+read (phrase)
+IF (Phrase[i]!="") THEN
+nbr:=phrase.lengthOfArray()
+    write("the sentence's length is",nbr)
+END_IF
+
+WHILE (phrase[i]!="") DO
+    
+    IF (Phrase[i]==" ") THEN
+        w:=w++
+        write("the number of words is",w)
+    END_IF
+FOR i FROM 0 TO nbr
+   IF (phrase[i]=="a","A","e","E","i","I","o","O","u","U") THEN
+      vow=vow++ 
+   END_IF
+  DO
+  write ("the number of vowels is ",vow)
+    
+END_FOR
+    
+
+
+
+END
